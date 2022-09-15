@@ -9,6 +9,3 @@
 // System.Console.WriteLine($"Результат: {Calculate(firstNumber, secondNumber)}");
 
 
-
-
-
