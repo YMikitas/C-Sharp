@@ -3,18 +3,18 @@
 // [3 7 22 2 78] -> 76
 
 int size = 10;
-int[] array = new int[size];
+double[] array = new double[size];
 
 for (int i = 0; i < array.Length; i++)
 {
-    array [i] = new Random().Next(101);
+    array [i] = new Random().NextDouble() * 100;
     System.Console.Write(array[i] + "\t");
 }
 
-int min = array[0];
-int max = array[0];
+double min = array[0];
+double max = array[0];
 
-foreach (int i in array)
+foreach (double i in array)
 {
     if (min > i) min = i;
     if (max < i) max = i;
