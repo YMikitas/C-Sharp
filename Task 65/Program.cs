@@ -7,16 +7,20 @@
 /// Комментарии к методу
 /// start - начало, то есть, число 1 по условию
 /// end - конец или число N
-System.Console.WriteLine("Введите число N");
-int N = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число M");
+
+System.Console.Write("Введите число M: ");
 int M = Convert.ToInt32(Console.ReadLine());
-string PrintNumbers(int start, int end);
+
+System.Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
 if (M > N)
 {
-    System.Console.WriteLine("Impossible");
+    System.Console.WriteLine("Обратный вывод не предусмотрен.");
     return;
 }
+
+string PrintNumbers(int start, int end)
 {
     // Базовый случай
     if (start == end) return start.ToString(); // start - int, а метод возращает строчку
